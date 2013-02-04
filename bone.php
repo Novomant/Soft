@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+    <head>
 		<title>Игра в кости V 1.0</title>
 	</head>
 		<body>
