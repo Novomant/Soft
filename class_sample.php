@@ -1,23 +1,23 @@
 <?php
 class MyClass
 {
-	public $prop1= "Свойство класса";
+	public $prop1= "РЎРІРѕР№СЃС‚РІРѕ РєР»Р°СЃСЃР°";
 
 	public static $count = 0;
 
 	public function __construct()
 	{
-		echo "Создан объект класса<br>";
+		echo "РЎРѕР·РґР°РЅ РѕР±СЉРµРєС‚ РєР»Р°СЃСЃР°<br>";
 	}
 
 	public function __destruct()
 	{
-		echo "Объект класса удален<br>";
+		echo "РћР±СЉРµРєС‚ РєР»Р°СЃСЃР° СѓРґР°Р»РµРЅ<br>";
 	}
 
 	public function __toString()
 	{
-		echo "Используем метод toString: ";
+		echo "РСЃРїРѕР»СЊР·СѓРµРј РјРµС‚РѕРґ toString: ";
 		return $this->getProperty();
 	}
 
@@ -42,12 +42,12 @@ class MyOtherClass extends MyClass
 	public function __construct()
 	{
 		parent::__construct();
-		echo "Новый конструктор в классе ".__CLASS__."<br>";
+		echo "РќРѕРІС‹Р№ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РІ РєР»Р°СЃСЃРµ ".__CLASS__."<br>";
 	}
 
 	public function newMethod()
 	{
-		echo "Из нового метода класса ".__CLASS__.".<br>";
+		echo "РР· РЅРѕРІРѕРіРѕ РјРµС‚РѕРґР° РєР»Р°СЃСЃР° ".__CLASS__.".<br>";
 	}
 
 	public function callProtected()
